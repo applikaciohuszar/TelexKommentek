@@ -1,0 +1,28 @@
+{
+	"manifest_version" : 2,
+	"name" : "Telex Kommentek",
+	"author" : "Applikáció Huszár",
+	"description" : "A kiegészítő segítségével lehetősége lesz megjegyzéseket írni a cikkek alá!",
+	"version" : "1.0.0",
+	"permissions" : ["http://telex.hu/*", "https://telex.hu/*", "tabs"],
+	"background" : {
+		"page" : "Background.html",
+		"persistent" : true
+	},
+	"icons" : {
+		"16" : "i16.png",
+		"32" : "i32.png",
+		"48" : "i48.png",
+		"128" : "i128.png"
+	},
+	"content_scripts" : [{
+		"matches": ["http://telex.hu/*", "https://telex.hu/*"],
+		"css" : ["contentStyles.css"],
+		"js" : ["extensionPolyfill.js"],
+		"run_at" : "document_start"
+	}, {
+		"matches": ["http://telex.hu/*", "https://telex.hu/*"],
+		"js" : ["contentScripts.js"],
+		"run_at" : "document_end"
+	}]
+}

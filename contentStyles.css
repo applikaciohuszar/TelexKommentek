@@ -1,0 +1,62 @@
+button[data-telex] {
+	cursor: pointer;
+	transition: opacity .1s linear
+}
+
+button[data-telex]:active,
+button[data-telex]:focus {
+	outline: none	
+}
+
+button[data-telex="commentButton"]  {
+	width: auto;
+	height: auto;
+	padding: 10px 30px;
+	margin: 0;
+	border: 0;
+	text-align: center;
+	color:#fff;
+	font-family: Graphik,Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+	background-color: #022a53;
+	border-radius: 5px
+}
+
+button[data-telex="commentButton"]:hover {
+	opacity: .8
+}
+
+button[data-telex="commentButton"]:active {
+	transform: translateY(1px)
+}
+
+button[data-telex="commentButton"]:before {
+	width: 1.5em;
+	height: 1.5em;
+	position: relative;
+	margin-right: 10px;
+	vertical-align: top;
+	display: inline-block;
+	content: url('data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjb21tZW50cyIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWNvbW1lbnRzIGZhLXctMTgiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTc2IDUxMiI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik00MTYgMTkyYzAtODguNC05My4xLTE2MC0yMDgtMTYwUzAgMTAzLjYgMCAxOTJjMCAzNC4zIDE0LjEgNjUuOSAzOCA5Mi0xMy40IDMwLjItMzUuNSA1NC4yLTM1LjggNTQuNS0yLjIgMi4zLTIuOCA1LjctMS41IDguN1M0LjggMzUyIDggMzUyYzM2LjYgMCA2Ni45LTEyLjMgODguNy0yNSAzMi4yIDE1LjcgNzAuMyAyNSAxMTEuMyAyNSAxMTQuOSAwIDIwOC03MS42IDIwOC0xNjB6bTEyMiAyMjBjMjMuOS0yNiAzOC01Ny43IDM4LTkyIDAtNjYuOS01My41LTEyNC4yLTEyOS4zLTE0OC4xLjkgNi42IDEuMyAxMy4zIDEuMyAyMC4xIDAgMTA1LjktMTA3LjcgMTkyLTI0MCAxOTItMTAuOCAwLTIxLjMtLjgtMzEuNy0xLjlDMjA3LjggNDM5LjYgMjgxLjggNDgwIDM2OCA0ODBjNDEgMCA3OS4xLTkuMiAxMTEuMy0yNSAyMS44IDEyLjcgNTIuMSAyNSA4OC43IDI1IDMuMiAwIDYuMS0xLjkgNy4zLTQuOCAxLjMtMi45LjctNi4zLTEuNS04LjctLjMtLjMtMjIuNC0yNC4yLTM1LjgtNTQuNXoiPjwvcGF0aD48L3N2Zz4=')
+}
+
+div[data-telex="boxSeparator"] {
+	padding-top: 40px;
+	text-align: center;
+	margin-top: 40px;
+	border-top: 1px solid rgba(0,0,0,.2)
+}
+
+div[data-telex="attention"] {
+	padding: 20px;
+	text-align: center;
+	background-color: #022a53;
+	opacity: .9;
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	margin-bottom: 40px
+}
